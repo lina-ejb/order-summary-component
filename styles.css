@@ -30,6 +30,7 @@ body {
     color: var(--desaturated-blue);
     border-radius: 20px;
     overflow: hidden;
+    margin: 50px auto;
 }
 
 .title {
@@ -44,6 +45,11 @@ body {
 
 .container {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
 }
 
 .container > * {
@@ -52,6 +58,36 @@ body {
 
 .order-description {
     line-height: 25px;
+    
+}
+.plan-description {
+    line-height: 20px;
+    margin-right: 75px;  
+}
+
+.plan-container {
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-container a {
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+
+.plan-container:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.plan-container strong {
+    color: var(--dark-blue);
 }
 
 button {
@@ -77,7 +113,6 @@ background-color: var(--bright-blue);
 .cancel-button {
     background-color: white;
     color: var(--desaturated-blue);
-    border: none;
     margin-bottom: 22px;
 
 }
